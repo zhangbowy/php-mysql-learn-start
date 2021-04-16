@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>忘记密码</title>
+</head>
+<body>
+<h3>博哥密码修改界面</h3>
+<?php echo $_GET['username']; ?>
+    <ul>
+        <li>用户名：<?php echo $_GET['username']; ?></li>
+        <li>密  码：<?php echo $_GET['password']; ?></li>
+        <li>性  别：<?php echo $_GET['sex']; ?>     </li>
+        <li>地  址：<?php echo $_GET['address']; ?></li>
+
+    <form action="wangyi.php" method="get">
+        <li>用户名：<input type="text" name="user" value=""></li>
+        <li>密  码：<input type="text" name="psd"></li>
+        <li>性  别：<input type="text" name='npsd'></li>
+         <li>地址：<input type="text" name='npsd'></li>
+        <li>提交修改 <input type="submit" value="提交修改"></li>
+
+    </ul>
+
+
+
+
+
+    </form>
+</body>
+</html>
